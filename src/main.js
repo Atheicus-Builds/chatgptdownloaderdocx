@@ -27,6 +27,11 @@ document.querySelector("#app").innerHTML = `
           </div>
         </div>
 
+        <nav class="projectLinks" aria-label="Project links">
+          <a href="https://github.com/Atheicus-Builds/chatgptdownloaderdocx" target="_blank" rel="noreferrer">GitHub repo</a>
+          <a href="https://atheicus.com" target="_blank" rel="noreferrer">atheicus.com</a>
+        </nav>
+
         <label class="field">
           <span>Shared chat URL</span>
           <input id="shareUrl" type="url" placeholder="https://chatgpt.com/share/..." autocomplete="off" />
@@ -113,7 +118,7 @@ async function fetchShare() {
   setStatus("Fetching the shared page locally...");
 
   try {
-    const response = await fetch("/api/fetch-share", {
+    const response = await fetch(`${import.meta.env.BASE_URL}api/fetch-share`, {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ url })

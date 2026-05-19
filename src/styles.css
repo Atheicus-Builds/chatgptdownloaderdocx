@@ -73,7 +73,7 @@ button:disabled {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 22px;
+  margin-bottom: 14px;
 }
 
 .mark {
@@ -104,6 +104,27 @@ h1 {
 .empty p {
   color: #686a62;
   line-height: 1.45;
+}
+
+.projectLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.projectLinks a {
+  border: 1px solid #d8d6ca;
+  border-radius: 999px;
+  color: #244f3e;
+  font-size: 0.85rem;
+  font-weight: 800;
+  padding: 6px 10px;
+  text-decoration: none;
+}
+
+.projectLinks a:hover {
+  background: #edf2ec;
 }
 
 .field {
