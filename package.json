@@ -7,6 +7,7 @@
     "dev": "node server.js",
     "start": "NODE_ENV=production node server.js",
     "build": "vite build",
+    "build:softwarebuilds": "BASE_PATH=/builds/chatgptdownloaderdocx vite build",
     "preview": "vite preview"
   },
   "engines": {
